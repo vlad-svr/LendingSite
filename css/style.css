@@ -1,0 +1,114 @@
+@import url("blocks/header.css");
+@import url("blocks/main.css");
+@import url("blocks/footer.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html, body {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+    font-size: 16px;
+    overflow-wrap: break-word;
+    cursor: default;
+    
+}
+
+
+
+.lending-site {
+    max-width: 100%;
+    min-width: 320px;
+}
+
+
+
+.flexform {
+    display: none;
+    z-index: 40;     
+    position: fixed;
+    width: 400px;
+    height: 350px;
+    top: 250px;
+    left: 850px;
+    background: #ffffff;
+    box-shadow: 1px 1px 16px black;
+}
+
+.flexform .close {
+position: absolute;
+left: 378px;
+bottom: 330px;
+border: none;
+border-radius: 30px;
+width: 38px;
+height: 38px;
+background:#424242;
+font-size: 20px;
+color: white;
+padding: 5px;
+outline:none;
+text-transform: uppercase;
+}
+
+
+.flexform .close:hover {
+cursor: pointer;
+}
+
+
+.flexform form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flexform form input{
+display: block;
+margin-bottom: 20px;
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #d7d6d6;
+    font-size: 12px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+.flexform form input:last-child {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.flexform form button{
+    display: block;
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    background: #ffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    outline:none;
+}
+
+.flexform form button:hover {
+    background: #4d4d4d;
+    border: 1px solid #4d4d4d;
+    color: #ffff;
+    cursor: pointer;
+
+}
+
+.flexform--start {
+    display: block;
+}
